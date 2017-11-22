@@ -18,12 +18,12 @@ body {
 .header {
 	position: fixed;
 	width: 100%;
-	background-color: white;
+	background-color: #17419D;
     box-shadow: 0px 20px 80px 0px rgba(0,0,0,0.03);
 	z-index: 999;
 	box-sizing: border-box;
-	padding: 12px 20px;
-	height: 60px;
+	/*padding: 12px 20px;*/
+	height: 8px;
 	overflow: hidden;
 }
 
@@ -110,7 +110,7 @@ body {
 
 .left, .right {
 	padding: 4vw;
-	margin-top: 184px;
+	margin-top: 88px;
 	box-sizing: border-box;
 }
 
