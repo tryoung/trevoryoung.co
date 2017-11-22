@@ -314,7 +314,7 @@ ul.work > :nth-child(2) {
 
 
 h1 {
-    font-size: calc(24px + 3vw);
+    font-size: calc(24px + 2vw);
     line-height: calc(28px + 3.7vw);
     padding: 0px;
     font-family: 'Inconsolata', monospace;
