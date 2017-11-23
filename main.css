@@ -126,6 +126,17 @@ body {
 	flex-direction: column;
 }
 
+/* PARTICLES */
+
+.particles {
+  position: absolute; top: 0; left: 0;
+  height: 100px;
+  width: 100%;
+}
+
+#particles-js {
+  height: 500px;
+}
 
 /* ESSAYS */
 
