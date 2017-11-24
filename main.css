@@ -108,6 +108,18 @@ body {
   text-decoration: none;
 }
 
+.intro h1 {
+  font-size: calc(24px + 2vw);
+  font-weight: bold;
+  margin-bottom: 8px;
+  line-height: normal;
+}
+
+.intro h3 {
+  margin-top: 0;
+  line-height: normal;
+}
+
 .left, .right {
 	padding: 4vw;
 	margin-top: 88px;
@@ -124,6 +136,10 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+}
+
+.links{
+  margin-top: 24px;
 }
 
 /* PARTICLES */
@@ -330,11 +346,11 @@ h1 {
     padding: 0px;
     font-family: 'Inconsolata', monospace;
     font-weight: normal;
-    font-style: regular;
+    font-style: normal;
     color: #17419D;
     text-align: left !important;
-    position: absolute;
-    margin-top: calc(-15px - 6vw);
+    /*position: absolute;*/
+    /*margin-top: calc(-15px - 6vw);*/
 }
 
 h2 {
@@ -350,7 +366,7 @@ h2 {
 
 
 h3 {
-    font-size: calc(16px + 1.6vw);
+    font-size: calc(16px + 1vw);
     line-height: calc(20px + 1.8vw);
 	color: #343434;
 	margin-top: -20px;
@@ -520,6 +536,10 @@ li.section:nth-child(odd) .description {
 }
 
 
+.particles {
+  display: none !important;
+}
+
 .desktop {
 	display: none;
 }
@@ -541,8 +561,12 @@ h3 {
 	width: 100%;
 }
 
+.left{
+  margin-top: -20px;
+}
+
 .right {
-/* 	display: none; */
+ 	display: none;
 	height: 400px;
 	position: absolute;
 	background-image: url(../img/profile.jpg);
@@ -550,9 +574,9 @@ h3 {
 	background-position: center center;
 }
 
-.left {
+/*.left {
 	margin-top:400px;
-}
+}*/
 
 .essays {
 	padding-bottom: 6vw;
