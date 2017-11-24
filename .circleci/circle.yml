@@ -1,1 +1,1 @@
-aws s3 sync <path-to-files> s3://<trevoryoung.design> --delete
+aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co  s3://trevoryoung.design --delete
