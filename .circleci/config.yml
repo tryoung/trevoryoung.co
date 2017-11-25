@@ -23,17 +23,17 @@ jobs:
           name: Deploy to S3 if tests pass and branch is Master
           command: aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
 
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only: master
+# workflows:
+#   version: 2
+#   build-deploy:
+#     jobs:
+#       - build
+#       - deploy:
+#           requires:
+#             - build
+#           filters:
+#             branches:
+#               only: master
 
 
 # dependencies:
