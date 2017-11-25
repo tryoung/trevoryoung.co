@@ -1,4 +1,7 @@
 version: 2
+dependencies:
+    override:
+        - sudo pip install awscli
 jobs:
   build:
     docker:
@@ -13,9 +16,9 @@ jobs:
           command: date
 
 
-dependencies:
-    override:
-        - sudo pip install awscli
+# dependencies:
+#     override:
+#         - sudo pip install awscli
 deployment:
   prod:
     branch: master
