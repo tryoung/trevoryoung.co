@@ -11,3 +11,8 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
