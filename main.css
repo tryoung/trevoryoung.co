@@ -291,20 +291,20 @@ ul.work > :nth-child(2) {
 }
 
 
-.digit_iOS {
-  background: url(img/digit_ios.png);
+.digit-ios {
+  background-image: url('../img/digit_ios.png');
 }
 
 .showpad-downloads {
 
 }
 
-.showpad-iOS {
-	background-image: url(../img/peek.jpg);
+.showpad-ios {
+	background-image: url('../img/digit_ios.png');
 }
 
 .showpad-gmail {
-	background-image: url(../img/facebook-stories.jpg);
+	background-image: url(../img/IMG_0038 2.jpg);
 }
 
 
@@ -614,10 +614,10 @@ li.section:nth-child(even) .description {
 	background-position-x: 20%;
 }
 
-.digit_iOS {
+/*.digit-ios {
 	background-position-x: 70%;
-  background: url(img/digit_ios.png);
-}
+  background: url('../img/digit_ios.png');
+}*/
 
 .fb-photos {
 	background-position-x: 30%;
@@ -625,15 +625,14 @@ li.section:nth-child(even) .description {
 }
 
 
-.digit-iOS {
-  /*background-image: url(http://www.gabrielvaldivia.com/img/facebook-360.jpg);*/
+/*.digit-ios {
+  background-image: url('../img/digit_ios.png');
 	background-size: 100% auto;
 	background-position: center top;
-	/*background-color: black;*/
-}
+}*/
 
 .digit-bills {
-	background: url(img/digit_ios.png);
+	background: url(../img/IMG_0038 2.jpg);
 	background-position: center 10%;
 	background-position-x: 10%;
 }
