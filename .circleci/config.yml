@@ -12,6 +12,15 @@ jobs:
           name: Print the Current Time
           command: date
 
+deploy:
+    docker:
+      - image: debian:stretch
+    working_directory: /Users/trevor/Documents/GitHub/trevoryoung.co
+    steps:
+      - run:
+          name: Deploy to S3 if tests pass and branch is Master
+          command: aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
+
 workflows:
   version: 2
   build-deploy:
@@ -24,8 +33,8 @@ workflows:
             branches:
               only: master
 
-deployment:
-  prod:
-    branch: master
-    commands:
-      - aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
+# deployment:
+#   prod:
+#     branch: master
+#     commands:
+#       - aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
