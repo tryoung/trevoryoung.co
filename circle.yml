@@ -1,8 +1,0 @@
-dependencies:
-    override:
-        - sudo pip install awscli
-deployment:
-  prod:
-    branch: master
-    commands:
-      - aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
