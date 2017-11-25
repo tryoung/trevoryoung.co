@@ -97,6 +97,7 @@ body {
 
 .intro a {
   margin-right: 24px;
+  line-height: 32px;
   color: #17419D;
   font-size: 20px;
   font-family: 'Inconsolata', monospace;
