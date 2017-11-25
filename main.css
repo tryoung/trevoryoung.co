@@ -291,8 +291,8 @@ ul.work > :nth-child(2) {
 }
 
 
-.digit_ios {
-  background-image: url("digit_ios.png");
+.digit_iOS {
+  background: url(img/digit_ios.png);
 }
 
 .showpad-downloads {
@@ -614,9 +614,9 @@ li.section:nth-child(even) .description {
 	background-position-x: 20%;
 }
 
-.digit_ios {
+.digit_iOS {
 	background-position-x: 70%;
-  background: url("digit_ios.png");
+  background: url(img/digit_ios.png);
 }
 
 .fb-photos {
@@ -629,11 +629,11 @@ li.section:nth-child(even) .description {
   /*background-image: url(http://www.gabrielvaldivia.com/img/facebook-360.jpg);*/
 	background-size: 100% auto;
 	background-position: center top;
-	background-color: black;
+	/*background-color: black;*/
 }
 
 .digit-bills {
-	background-image: url("digit_ios.png");
+	background: url(img/digit_ios.png);
 	background-position: center 10%;
 	background-position-x: 10%;
 }
