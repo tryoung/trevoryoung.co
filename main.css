@@ -78,7 +78,7 @@ body {
 }
 
 .twitter::before {
-  content: "â™¥ ";
+  content: "❤️";
 }
 
 
@@ -286,56 +286,26 @@ ul.work > :nth-child(2) {
     z-index: 1;
 }
 
-/*.digit-bills {
-	color: #264D5B;
+.digit-bills {
+
 }
 
 
-.facebook-360 {
-	color:#41283B;
+.digit_ios {
+  background-image: url("digit_ios.png");
 }
 
-.fb-photos {
-	color: #3857A2;
+.showpad-downloads {
+
 }
 
-
-.talk-turkey {
-	background-image: url(../img/talk-turkey.jpg);
-	color: #396F66;
-}
-
-
-.peek {
+.showpad-iOS {
 	background-image: url(../img/peek.jpg);
-	color: #683E1B;
 }
 
-.facebook-stories {
+.showpad-gmail {
 	background-image: url(../img/facebook-stories.jpg);
-	color: #666;
 }
-
-.facebook-composer {
-	background-image: url(../img/facebook-composer.jpg);
-	color: #5D6B7F;
-}
-
-.facebook-pages {
-	background-image: url(../img/facebook-pages.jpg);
-	color: #4267B2;
-}
-
-.facebook-360 {
-	background-image: url(../img/facebook-360.jpg);
-}
-
-.automatic {
-	background-image: url(../img/automatic.jpg);
-	color: #5F696F;
-}*/
-
-
 
 
 /* TYPOGRAPHY */
@@ -644,25 +614,26 @@ li.section:nth-child(even) .description {
 	background-position-x: 20%;
 }
 
-.talk-turkey {
+.digit_ios {
 	background-position-x: 70%;
+  background: url("digit_ios.png");
 }
 
 .fb-photos {
 	background-position-x: 30%;
-	background-image: url(../img/360-photos.jpg);
+	/*background-image: url(../img/360-photos.jpg);*/
 }
 
 
 .digit-iOS {
-/* 	background-image: url(../img/fb360-mobile.png); */
+  /*background-image: url(http://www.gabrielvaldivia.com/img/facebook-360.jpg);*/
 	background-size: 100% auto;
 	background-position: center top;
 	background-color: black;
 }
 
 .digit-bills {
-	background-image: url(../img/fbspaces-mobile.png);
+	background-image: url("digit_ios.png");
 	background-position: center 10%;
 	background-position-x: 10%;
 }
