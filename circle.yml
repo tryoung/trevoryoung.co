@@ -2,7 +2,7 @@ dependencies:
     override:
         - pip install awscli
 deployment:
-  production:
+  prod:
     branch: master
     commands:
       - aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
