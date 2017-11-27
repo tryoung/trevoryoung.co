@@ -92,6 +92,7 @@ body {
 /* 	padding-bottom: 4vw;  */
 	box-sizing: border-box;
 	display: flex;
+  background-image: url('..img/ProfilePic.jpg');
 	background-color: white;
 }
 
@@ -145,17 +146,17 @@ body {
 
 /* PARTICLES */
 
-.particles {
-  position: absolute; top: 0; left: 0;
-  height: 100px;
-  width: 100%;
-}
+  .particles {
+    position: absolute; top: 0; left: 0;
+    height: 100px;
+    width: 100%;
+  }
 
-#particles-js {
-  height: 500px;
-}
+  #particles-js {
+    height: 500px;
+  }*/
 
-/* ESSAYS */
+/* ESSAYS
 
 
 .essays {
@@ -426,7 +427,7 @@ footer a:hover {
 
 
 .intro {
-	background-image: url('..img/Profile Pic.jpg');
+	background-image: url('../img/ProfilePic.jpg');
 	background-size: 72vh auto;
 	background-repeat: no-repeat;
 	background-position: 42vw 5vw;
@@ -538,10 +539,10 @@ h3 {
 }
 
 .right {
- 	display: none;
+ 	/*display: none;*/
 	height: 400px;
 	position: absolute;
-	background-image: url('..img/Profile Pic.jpg');
+	background-image: url('..img/ProfilePic.jpg');
 	background-size: cover;
 	background-position: center center;
 }
