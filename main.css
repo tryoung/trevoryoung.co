@@ -426,7 +426,7 @@ footer a:hover {
 
 
 .intro {
-	background-image: url(../img/profile2.jpg);
+	background-image: url('..img/Profile Pic.jpg');
 	background-size: 72vh auto;
 	background-repeat: no-repeat;
 	background-position: 42vw 5vw;
@@ -541,7 +541,7 @@ h3 {
  	display: none;
 	height: 400px;
 	position: absolute;
-	background-image: url(../img/profile.jpg);
+	background-image: url('..img/Profile Pic.jpg');
 	background-size: cover;
 	background-position: center center;
 }
