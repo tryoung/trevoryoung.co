@@ -308,11 +308,11 @@ ul.work > :nth-child(2) {
 }
 
 .showpad-ios {
-	background-image: url();
+	background-image: url('../img/showpad_ios_cover.png');
 }
 
 .showpad-gmail {
-	background-image: url();
+	background-image: url('../img/showpad_gmail_cover.png');
 }
 
 
@@ -616,6 +616,10 @@ li.section:nth-child(even) .description {
 
 .digit-bills {
 	background-position: center;
+}
+
+.showpad-gmail {
+  background-position: left;
 }
 
 
