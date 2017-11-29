@@ -4,10 +4,15 @@ body {
     font-family: 'Poppins', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-/* 	background-color: #f3f3f3; */
+ 	  background: transparent;
     font-weight: normal;
     font-style: normal;
 }
+
+html {
+    background: #ffffff;
+}
+
 
 .wrapper {
     margin: 0 auto;
