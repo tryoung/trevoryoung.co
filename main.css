@@ -159,51 +159,7 @@ html {
 
   #particles-js {
     height: 500px;
-  }*/
-
-/* random
-
-
-.random {
-	padding: 4vw;
-	padding-bottom: calc(40px + 4vw);
-	background-color: #f7f7f7;
-}
-
-
-.random h2 {
-	margin-left: -30px;
-}
-
-.random ul {
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	padding-top: 4vw;
-}
-
-.random li {
-	width: 350px !important;
-/* 	padding: 20px; */
-    list-style-type: none !important;
-    margin-right: 2vw;
-    margin-bottom: 4vw;
-    opacity: 0.7;
-    transition: opacity 0.5s ease-out
-}
-
-.random li:hover {
-	opacity: 1;
-}
-
-.random a {
-	text-decoration: none;
-}
-
-.random a:visited {
-	color: black;
-}
+  }
 
 .button {
 	display: inline-block;
@@ -263,7 +219,7 @@ html {
 	background-repeat: no-repeat;
 	background-position: center top;
 
-    transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;
+    /*transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;*/
 }
 
 ul.work > :nth-child(2) {
@@ -303,8 +259,7 @@ ul.work > :nth-child(2) {
   background-image: url('../img/Bills_Cover.png');
 }
 
-
-.digit-ios {
+.digit-smart {
   background-image: url('../img/Quick Replies Cover.png');
 }
 
@@ -318,8 +273,40 @@ ul.work > :nth-child(2) {
 
 .showpad-gmail {
 	background-image: url('../img/showpad_gmail_cover.png');
+  margin-bottom: 5vw;
 }
 
+/* Dribbble */
+
+.shots h1{
+  margin-top: calc(-13px - 6vw);
+  flex-basis: 100%;
+}
+
+.shots{
+  list-style: none;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 4vw;
+  /*padding-top: 0;*/
+  justify-content: space-evenly;
+  background-size: 100%;
+  background-color: #FAFAFA;
+}
+
+.shots--shot {
+  margin: 12px;
+}
+
+.shots--shot img{
+  -webkit-box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 50px -14px rgba(0,0,0,0.2);
+}
+
+.shots h2{
+  order: 12;
+}
 
 /* TYPOGRAPHY */
 
@@ -329,7 +316,7 @@ h1 {
     line-height: calc(28px + 3.7vw);
     padding: 0px;
     font-family: 'Inconsolata', monospace;
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
     color: #17419D;
     text-align: left !important;
@@ -437,7 +424,6 @@ footer a:hover {
 	display: none;
 }
 
-
 .intro {
 	background-image: url('../img/ProfilePic.jpg');
 	background-size: 72vh auto;
@@ -462,6 +448,7 @@ li.section:nth-child(odd) {
 	right: -25%;
 }
 
+
 .description {
     width: 50vw;
     max-width: 500px;
@@ -471,29 +458,15 @@ li.section:nth-child(odd) {
     /*border: 0;*/
 }
 
-/*.hover-rect {
-width:50vw;
-position: absolute;
-right: -20vw;
-padding: 40px;
-background-color: ;
-}
-*/
 
-/*.description:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 10px 60px 0px rgba(0,0,0,0.1);
-}*/
-
-/*.description:hover ~ .hover-rect{
-  transition: background-color 0.3s ease;
-  background-color: #17419D;
-}*/
 li.section:nth-child(odd) .description {
     left: -20vw;
     right: auto;
 }â€‹
 
+.shots h2{
+  display: none;
+}
 
 }
 
@@ -503,6 +476,10 @@ li.section:nth-child(odd) .description {
 
 .intro {
 	background-position: 50vw 5vw;
+}
+
+.shots h2{
+  display: none;
 }
 
 }
@@ -551,7 +528,7 @@ h3 {
 }
 
 .right {
- 	/*display: none;*/
+ 	display: none;
 	height: 400px;
 	position: absolute;
 	background-image: url('..img/ProfilePic.jpg');
@@ -563,24 +540,7 @@ h3 {
 	margin-top:400px;
 }*/
 
-.random {
-	padding-bottom: 6vw;
-}
 
-.random ul {
-	padding-top: 10vw;
-}
-
-.random li {
-	padding: 0;
-	margin: 0;
-	margin-bottom: 40px;
-	width: 100% !important;
-}
-
-.random li:nth-child(n+4) {
-	display: none;
-}
 
 .video {
 	display:none;
@@ -617,6 +577,9 @@ li.section:nth-child(even) .description {
     bottom: 0;
 }
 
+.shots--shot {
+  flex-basis: 25%;
+}
 
 
 .digit-bills {
