@@ -498,6 +498,13 @@ li.section:nth-child(odd) .description {
   flex-direction: column;
   align-items: center;
 }
+
+.shots h1{
+  margin-top: calc(-13px - 6vw);
+  flex-basis: 100%;
+  align-self: flex-start;
+}
+
 .intro {
 	padding-bottom: 8vw;
 }
