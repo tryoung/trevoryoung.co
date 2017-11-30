@@ -569,7 +569,7 @@ li.section .description {
     left: 0;
     right: auto;
     bottom: 0;
-}â€‹
+}
 
 li.section:nth-child(even) .description {
 	right: 0;
