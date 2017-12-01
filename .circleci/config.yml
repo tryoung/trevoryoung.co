@@ -15,17 +15,18 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-      - run:
-          name: install dependencies
-          command: |
-            sudo apt install python-pip python-dev
-            sudo pip install awscli
+
 
   deploy:
     docker:
       - image: circleci/node:7.10.0
     working_directory: ~/trevoryoung.co
     steps:
+      - run:
+          name: install dependencies
+          command: |
+            sudo apt install python-pip python-dev
+            sudo pip install awscli
       - run:
           name: Deploy to S3 if tests pass and branch is Master
           command: aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
