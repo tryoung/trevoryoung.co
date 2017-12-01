@@ -1,7 +1,7 @@
 version: 2
 dependencies:
     override:
-        - sudo pip install awscli
+        - pip install awscli
 jobs:
   build:
     working_directory: /Users/trevor/Documents/GitHub/trevoryoung.co
@@ -15,7 +15,9 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
-
+      - run:
+          name: install dependencies
+          command: 'sudo pip install awscli'
   deploy:
     docker:
       - image: debian:stretch
