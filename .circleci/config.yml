@@ -17,7 +17,9 @@ jobs:
           command: date
       - run:
           name: install dependencies
-          command: sudo apt-get -y -qq install awscli
+          command: |
+            sudo apt install python-pip python-dev
+            sudop pip install awscli
 
   deploy:
     docker:
