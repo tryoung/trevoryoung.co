@@ -16,10 +16,13 @@ jobs:
           command: date
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       - run:
           name: install dependencies
           command: sudo pip install awscli
 
+=======
+>>>>>>> parent of 5d25d4c... Yet another circle test
 =======
 >>>>>>> parent of 5d25d4c... Yet another circle test
 =======
