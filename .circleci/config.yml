@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.6
-    working_directory: https://github.com/tryoung/trevoryoung.co.git
+    working_directory: ~/trevoryoung.co
     steps:
       - checkout
       - run:
@@ -22,7 +22,7 @@ jobs:
   deploy:
     docker:
       - image: circleci/python:3.6
-    working_directory: https://github.com/tryoung/trevoryoung.co.git
+    working_directory: ~/trevoryoung.co
     steps:
       - run:
           name: Deploy to S3 if tests pass and branch is Master
