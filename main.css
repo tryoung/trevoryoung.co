@@ -197,7 +197,13 @@ html {
 
 /* WORK */
 
-
+.work h1 span{
+  display: inline-block;
+  color: white;
+  background-color: #17419D;
+  padding-left: 5vw;
+  padding-right: 1vw;
+}
 .work {
   -webkit-padding-start: 0;
     list-style-type: none !important;
@@ -281,7 +287,17 @@ ul.work > :nth-child(2) {
 .shots h1{
   margin-top: calc(-13px - 6vw);
   flex-basis: 100%;
+  position: relative;
 }
+
+.shots h1 span{
+  display: inline-block;
+  color: white;
+  background-color: #17419D;
+  padding-left: 5vw;
+  padding-right: 1vw;
+}
+
 
 .shots{
   list-style: none;
@@ -307,6 +323,7 @@ ul.work > :nth-child(2) {
 }
 
 .shots h2{
+  flex-basis: 100%;
   order: 12;
 }
 
