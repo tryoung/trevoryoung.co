@@ -4,6 +4,7 @@ dependencies:
         - sudo pip install awscli
 jobs:
   build:
+    working_directory: /Users/trevor/Documents/GitHub/trevoryoung.co
     docker:
       - image: debian:stretch
     steps:
@@ -14,6 +15,9 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - run:
+          name: install awscli
+          command: sudo pip install awscli
   deploy:
     docker:
       - image: debian:stretch
@@ -22,3 +26,16 @@ jobs:
       - run:
           name: Deploy to S3 if tests pass and branch is Master
           command: aws s3 sync /Users/trevor/Documents/GitHub/trevoryoung.co s3://trevoryoung.design --delete
+
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
