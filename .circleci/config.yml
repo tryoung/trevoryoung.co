@@ -1,7 +1,7 @@
 version: 2
 dependencies:
     override:
-        - sudo pip install awscli
+        - pip install awscli
 jobs:
   build:
     working_directory: /Users/trevor/Documents/GitHub/trevoryoung.co
@@ -17,7 +17,7 @@ jobs:
           command: date
       - run:
           name: install awscli
-          command: sudo pip install awscli
+          command: pip install awscli
   deploy:
     docker:
       - image: debian:stretch
