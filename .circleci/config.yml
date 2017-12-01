@@ -4,7 +4,6 @@ dependencies:
         - pip install awscli
 jobs:
   build:
-    working_directory: /Users/trevor/Documents/GitHub/trevoryoung.co
     docker:
       - image: circleci/python:3.6
     steps:
