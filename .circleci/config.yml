@@ -6,7 +6,7 @@ jobs:
   build:
     working_directory: /Users/trevor/Documents/GitHub/trevoryoung.co
     docker:
-      - image: circleci/python:latest
+      - image: circleci/python:3.6
     steps:
       - checkout
       - run:
@@ -17,12 +17,11 @@ jobs:
           command: date
       - run:
           name: install dependencies
-          command:
-                sudo pip install awscli
+          command: sudo pip install awscli
 
   deploy:
     docker:
-      - image: circleci/python:[latest]
+      - image: circleci/python:3.6
     working_directory: /Users/trevor/Documents/GitHub/trevoryoung.co
     steps:
       - run:
