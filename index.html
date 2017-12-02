@@ -115,7 +115,7 @@
   <h1><span>Some Work</span></h1>
 
   <li class="section digit-bills">
-    <div class="description">
+    <div class="description" data-rellax-percentage="1.2">
       <h2>Bills with Digit</h2>
       <p>Digit's first forray into handling all of your monthly bills.</p>
       <a class="button" target="_blank" href="https://medium.com/@_tyoung/bills-with-digit-8404c7082e8f">Case Study</a>
@@ -124,7 +124,7 @@
   </li>
 
   <li class="section digit-smart">
-    <div class="description">
+    <div class="description" data-rellax-percentage="1.2">
       <h2>Digit's Smart Replies</h2>
       <p>Guiding user's interactions with Digit.</p>
       <a class="button" target="_blank" href="https://medium.com/@_tyoung/digit-smart-replies-ae73b36b6f44">Case Study</a>
@@ -143,7 +143,7 @@
   </li> -->
 
   <li class="section showpad-downloads">
-    <div class="description">
+    <div class="description" data-rellax-percentage="1.2">
       <h2>Staying Up to Date at Showpad</h2>
       <p>Making content updates less painful for everyone.</p>
       <a class="button" target="_blank" href="https://medium.com/@_tyoung/redesigning-showpads-download-update-schemes-4005f3dcfc96">Case Study</a>
@@ -152,7 +152,7 @@
   </li>
 
   <li class="section showpad-ios">
-    <div class="description">
+    <div class="description" data-rellax-percentage="1.2">
       <h2>Showpad for iOS</h2>
       <p>Completely redesigning Showpad's flagship app.</p>
       <p id="coming-soon">Coming Soon...</p>
@@ -162,7 +162,7 @@
   </li>
 
   <li class="section showpad-gmail">
-    <div class="description">
+    <div class="description" data-rellax-percentage="1.2">
       <h2>Showpad for Gmail</h2>
       <p>Making showpad a seamless part of user's workflow.</p>
       <p id="coming-soon">Coming Soon...</p>
@@ -221,26 +221,26 @@ $(".description").on({
 });
 </script> -->
 
-<script type="text/javascript">
-    var $animation_elements = $('.description');
-    var $window = $(window);
-    function pullDescriptionUp() {
-        var window_height = $window.height();
-        var window_top_position = $window.scrollTop();
-        var window_bottom_position = (window_top_position + window_height);
-        $.each($animation_elements, function() {
-            var $element = $(this);
-            var element_height = $element.outerHeight();
-            var element_top_position = $element.offset().top;
-            var element_bottom_position = (element_top_position + element_height);
-            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-                $element.css("margin-top", (((element_top_position -window_bottom_position) / 5) + 250) );
-            } else {
-            }
-        });
-    }
-    $window.on('scroll', pullDescriptionUp);
-</script>
+<!-- <<script type="text/javascript">
+    var $animation_elements = $(".description");
+    var $cached_elements = $.map($animation_elements, function(element) { return $(element) });
+    var $window = $(window);
+    function pullDescriptionUp() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+        $.each($cached_elements, function(index, $element) {
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.css("margin-top", (((element_top_position -window_bottom_position) / 5) + 250) );
+            } else {
+            }
+        });
+    }
+    $window.on('scroll', pullDescriptionUp);
+</script> -->
 
 <script src="../js/rellax.min.js"></script>
 <script>
@@ -250,7 +250,7 @@ if ($(window).width() <= 375) {
 {
 	var description = new Rellax('.description', {
 			speed: 2,
-			center: true,
+			// center: true,
 	  });
 }
 </script>
