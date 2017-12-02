@@ -81,7 +81,7 @@
 
 	<div class="intro">
 		<div class="left">
-        <h1>Testing Young</h1>
+        <h1>Trevor Young</h1>
 				<h3>Product Designer</h3>
 
 			<p>I've been designing products for a few years now. Stuff you'd expect – web, apps for iOS, Android, & Windows... But I've also worked on some unique products as well. A vending machine that talks & gets app sign ups. A pretty popular kids game. A mac app that lets you know if the office bathroom is free or occupied!</p>
@@ -188,7 +188,7 @@
 
 <!-- Body Scripts -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     var $animation_elements = $(".description");
     var $window = $(window);
     function pullDescriptionUp() {
@@ -219,7 +219,30 @@ $(".description").on({
         jQuery(this).parent('.section').removeClass('section-active');
     }
 });
+</script> -->
+
+<script type="text/javascript">
+    var $animation_elements = $(".description");
+    var $cached_elements = $.map($animation_elements, function(element) { return $(element) });
+    var $window = $(window);
+    function pullDescriptionUp() {
+        var window_height = $window.height();
+        var window_top_position = $window.scrollTop();
+        var window_bottom_position = (window_top_position + window_height);
+        $.each($cached_elements, function(index, $element) {
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+            if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+                $element.css("margin-top", (((element_top_position -window_bottom_position) / 5) + 250) );
+            } else {
+            }
+        });
+    }
+    $window.on('scroll', pullDescriptionUp);
+    $window.trigger('scroll');
 </script>
+
 
 <!-- Dribbble -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
