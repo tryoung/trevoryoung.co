@@ -244,7 +244,7 @@ $(".description").on({
 
 <script src="../js/rellax.min.js"></script>
 <script>
-if ($(window).width() <= 667) {
+if ($(window).width() <= 375) {
  // some code..
 }else
 {
@@ -261,7 +261,7 @@ if ($(window).width() <= 667) {
 <script src="bower_components/jribbble/dist/jribbble.min.js"></script>
 
 <script>
-if($(window).width() >= 667){
+if($(window).width() >= 721){
 	$.jribbble.setToken('ce28c8d20c37ea618a73c08309016902de3649c0e52950c4a4c51c2c67b83dc2');
 
 	$.jribbble.users('tryoung').shots({per_page: 9}).then(function(shots) {
@@ -277,7 +277,7 @@ if($(window).width() >= 667){
 	});
 }
 
-if($(window).width() <= 667){
+if($(window).width() <= 720){
 	$.jribbble.setToken('ce28c8d20c37ea618a73c08309016902de3649c0e52950c4a4c51c2c67b83dc2');
 
 	$.jribbble.users('tryoung').shots({per_page: 4}).then(function(shots) {
