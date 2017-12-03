@@ -256,13 +256,6 @@ ul.work > :nth-child(2) {
   margin-bottom: 0;
 }
 
-.video {
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    width: 100%;
-    z-index: 1;
-}
 
 .digit-bills {
   background-image: url('../img/Bills_Cover.png');
@@ -458,16 +451,6 @@ footer a:hover {
 }
 
 
-
-.section-active {
-    /*transform: scale(0.98);*/
-    /*-webkit-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);*/
-}
-
-
-
 li.section:nth-child(odd) {
 	right: -25%;
 }
@@ -510,7 +493,7 @@ li.section:nth-child(odd) .description {
 
 
 /*-------- MOBILE --------*/
-@media only screen and (max-width: 720px)  {
+@media only screen and (max-width: 667px)  {
 
 
 
@@ -568,16 +551,6 @@ h3 {
 	background-image: url('..img/ProfilePic.jpg');
 	background-size: cover;
 	background-position: center center;
-}
-
-/*.left {
-	margin-top:400px;
-}*/
-
-
-
-.video {
-	display:none;
 }
 
 
