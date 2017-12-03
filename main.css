@@ -570,16 +570,9 @@ h3 {
 	background-position: center center;
 }
 
-/*.left {
-	margin-top:400px;
-}*/
-
-
-
-.video {
-	display:none;
+.left {
+	margin-top: 2vw;
 }
-
 
 .section {
     margin-bottom: 10vw;
@@ -617,10 +610,6 @@ li.section:nth-child(even) .description {
   flex-basis: 25%;
 }
 
-.shots {
-
-}
-
 .digit-bills {
 	background-position: center;
 }
@@ -629,6 +618,8 @@ li.section:nth-child(even) .description {
   background-position: left;
 }
 
+
+}
 
 /*.digit-ios {
   background-image: url('../img/digit_ios.png');
