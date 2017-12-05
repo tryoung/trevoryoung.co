@@ -590,6 +590,7 @@ h3 {
 li.section {
 	width: 100%;
 	margin-left: 0;
+  background-size: 100%;
 }
 
 li.section .description {
@@ -608,13 +609,6 @@ li.section:nth-child(even) .description {
   flex-basis: 25%;
 }
 
-.digit-bills {
-	background-position: center;
-}
-
-.showpad-gmail {
-  background-position: left;
-}
 
 
 }
