@@ -272,6 +272,10 @@ ul.work > :nth-child(2) {
   background-image: url('../img/Quick Replies Cover.png');
 }
 
+.digit-iOS {
+  background-image: url('../img/digit_ios_cover.png');
+}
+
 .showpad-downloads {
   background-image: url('../img/showpad_bgdl_cover.png');
 }
