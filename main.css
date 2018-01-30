@@ -49,9 +49,6 @@ html {
 	 text-decoration: none;
  }
 
-.header a:visited {
-	 color: black;
- }
 
  .contact, .contact a {
 	float: right;
@@ -81,12 +78,6 @@ html {
     margin-top: 0px !important;
     margin-right: 0px !important;
 }
-
-.twitter::before {
-  content: "❤️";
-}
-
-
 
 
 /* INTRO */
@@ -225,8 +216,6 @@ html {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-
-    /*transition: transform 0.5s ease-out, box-shadow 0.5s ease-out;*/
 }
 
 ul.work > :nth-child(2) {
@@ -459,15 +448,6 @@ footer a:hover {
 
 .intro p {
 /*     max-width: 570px; */
-}
-
-
-
-.section-active {
-    /*transform: scale(0.98);*/
-    /*-webkit-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 80px -14px rgba(0,0,0,0.2);*/
 }
 
 
