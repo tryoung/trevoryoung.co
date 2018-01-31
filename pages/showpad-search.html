@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Digit for iOS</title>
+    <title>Search at Showpad</title>
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -33,10 +33,12 @@
       display: block;
     }
 
-    .pic video {
+    .video video {
+      position: absolute;
+      top: 0;
+      object-fit: cover;
       width: 100%;
-      height: auto;
-      display: block;
+      z-index: 1;
     }
 
 
@@ -84,6 +86,7 @@
     <div class="container">
       <div class="pic"><img src="../img/showpadSearch/Start_Some_Input.png"/></div>
       <div class="pic"><img src="../img/showpadSearch/file_picker.png"/></div>
+      <div class="pic"><video class="video" autoplay="" loop=""><source src="../img/showpadSearch/Web_App_Serach_Filter_Tags.mov"></video></div>
       <div class="pic"><img src="../img/showpadSearch/Advanced_Search_SFDC_Filter.png"/></div>
       <div class="pic"><img src="../img/showpadSearch/Advanced_Search_Filters.png"/></div>
       <div class="pic"><img src="../img/showpadSearch/Misspelling.png"/></div>
