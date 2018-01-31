@@ -266,12 +266,20 @@ ul.work > :nth-child(2) {
   background-image: url('../img/digit_ios_cover.png');
 }
 
+.plants-journal {
+  background-image: url('../img/plants_cover.png');
+}
+
 .showpad-downloads {
   background-image: url('../img/showpad_bgdl_cover.png');
 }
 
 .showpad-ios {
 	background-image: url('../img/showpad_ios_cover.png');
+}
+
+.showpad-search {
+	background-image: url('../img/showpad_search_cover.png');
 }
 
 .showpad-gmail {
@@ -342,7 +350,7 @@ h1 {
 
 h2 {
     font-size: calc(16px + 1.5vw);
-    line-height: calc(18px + 2.5vw);
+    line-height: auto;
     display: block;
     margin: 0;
     padding: 0;

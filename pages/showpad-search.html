@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Digit for iOS</title>
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <style media="screen">
+
+    .container{
+      padding-top: 80px;
+      display: flex;
+      /*flex-direction: column;*/
+      flex-wrap: wrap;
+      /*height: 100vw;*/
+      justify-content: center;
+      margin: 2vw;
+    }
+
+
+    .pic{
+      margin: 32px;
+      -webkit-box-shadow: 0px 9px 22px -1px rgba(50, 50, 50, 0.33);
+      -moz-box-shadow:    0px 9px 22px -1px rgba(50, 50, 50, 0.33);
+      box-shadow:         0px 9px 22px -1px rgba(50, 50, 50, 0.33);
+    }
+
+    .pic img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .pic video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+
+    .header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #17419D;
+    -webkit-box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
+    box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
+    z-index: 999;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .header a {
+    font-family: inconsolata;
+    color: white;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: regular;
+    margin-top: 4px;
+  }
+
+  .header a:hover {
+  	 text-transform: uppercase;
+     text-decoration: none;
+   }
+
+  .container { visibility: hidden; }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="header">
+      <a href="../index.html#search">Back</a>
+    </div>
+
+    <div class="container">
+      <div class="pic"><img src="../img/showpadSearch/Start_Some_Input.png"/></div>
+      <div class="pic"><img src="../img/showpadSearch/file_picker.png"/></div>
+      <div class="pic"><img src="../img/showpadSearch/Advanced_Search_SFDC_Filter.png"/></div>
+      <div class="pic"><img src="../img/showpadSearch/Advanced_Search_Filters.png"/></div>
+      <div class="pic"><img src="../img/showpadSearch/Misspelling.png"/></div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+    window.sr = ScrollReveal();
+      sr.reveal('.pic');
+    </script>
+  </body>
+
+</html>
