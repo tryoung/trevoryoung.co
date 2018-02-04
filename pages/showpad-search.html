@@ -7,6 +7,8 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+
+
     <style media="screen">
 
     .container{
@@ -43,19 +45,19 @@
 
 
     .header {
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    background-color: #17419D;
-    -webkit-box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
-    -moz-box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
-    box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
-    z-index: 999;
-    box-sizing: border-box;
-    padding: 12px 20px;
-    height: 5em;
-    overflow: hidden;
+      top: 0;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      background-color: #17419D;
+      -webkit-box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
+      -moz-box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
+      box-shadow: 0px 9px 56px 0px rgba(0,0,0,0.32);
+      z-index: 999;
+      box-sizing: border-box;
+      padding: 12px 20px;
+      height: 4vw;
+      overflow: hidden;
   }
 
   .header a {
@@ -75,6 +77,19 @@
 
   .container { visibility: hidden; }
 
+  /*-------- MOBILE --------*/
+  @media only screen and (max-width: 720px)   {
+    .header {
+      height: 12vw;
+    }
+
+    .header a {
+      top: 40%;
+    }
+
+  }
+
+
     </style>
 
   </head>
@@ -92,6 +107,7 @@
       <div class="pic"><img src="../img/showpadSearch/Advanced_Search_Filters.png"/></div>
       <div class="pic"><img src="../img/showpadSearch/Misspelling.png"/></div>
     </div>
+
 
     <!-- Scripts -->
     <script>
