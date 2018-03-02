@@ -25,7 +25,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            sudo apt install python-pip python-dev
+            sudo apt-get install python-dev python-pip
             sudo pip install awscli
       - run:
           name: Deploy to S3 if tests pass and branch is Master
