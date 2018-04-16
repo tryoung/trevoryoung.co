@@ -106,6 +106,15 @@ html {
   text-decoration: none;
 }
 
+.blurb a{
+  font-family: 'Poppins', sans-serif;
+}
+
+.blurb a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .intro h1 {
   font-size: calc(24px + 2vw);
   font-weight: bold;
